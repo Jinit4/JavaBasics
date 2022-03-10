@@ -413,37 +413,7 @@ public class Main{
   //      System.out.print(i+" ");
   //    }
   //    System.out.println();
-  //  } 
-  // Q3 Print a Palindromic Number Pyramid LEFT unsolved 
-  // int n = 5;
-  // int l = 0;
-  // for(int i = 1; i <=n ; i++){
-  //   for(int k = n - i + l  ; k>=1; k--){
-  //     System.out.print(" ");
-  //     //System.out.println(i); 
-  //   }
-  //   l++;
-  //   for (int j = 1;j<=i;j++){
-  //     System.out.print(j); 
-  // }
-  // System.out.println();
-  // }
-  // Butterfly Pattern
-//     int n = 4;
-//   for(int i = 1;i<=n;i++){
-//     for (int j = 1 ;j<= i; j ++){         
-//     System.out.print("*");
-//   } for(int k = 2 * (n-i); k>=0; k--){     
-//     System.out.print(" ");
-//   }for (int j = 1 ;j<= i; j ++){
-//     System.out.print("*");}
-//   System.out.println();
-// }
-  /*
-  In this we are using important logic we can print the stars by the normal loops as shown above 
-  ie the i j and j. The logic used for no of spaces is first line has 6 spaces 2 line has 4 spaces 3 line has 
-  2 spaces and 4 line has 0 spaces. So we can write is as 2*(n-i) 
-  */
+  //  }
       sc.close(); 
         }
     }

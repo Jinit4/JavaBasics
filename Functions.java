@@ -1,4 +1,10 @@
 import java.util.*;
+// Functions & Methods 
+// Functions are a Block of Code which takes a certain Input performs some operation and producesa Output
+// returnType functionName (type arg1, type arg2..){
+// //operations }
+// Void >- No return 
+// Function name should not be any Keyword in Java  
 public class Functions {
     public static void pritnMyName (String name){
         System.out.println(name);

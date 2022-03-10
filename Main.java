@@ -300,22 +300,22 @@ public class Main{
        //
     // }
     // Print the Pattern Hollow Rectangle 
-    // for(int i =1; i<=4;i++)
-    // {
-    //   for(int j =1; j<=5;j++)
-    //   {
-    //     // cell (i,j) we want to print star only if the value of i =1 or j= 1 
-    //     if (i ==1 || j==1 || i == 4 || j==5)
-    //     {
-    //       System.out.print("*");
-    //     }
-    //     else{
-    //       System.out.print(" "); // this is used so that we can have space in cells which are empty 
-    //     }
+    for(int i =1; i<=4;i++)
+    {
+      for(int j =1; j<=5;j++)
+      {
+        // cell (i,j) we want to print star only if the value of i =1 or j= 1 
+        if (i ==1 || j==1 || i == 4 || j==5)
+        {
+          System.out.print("*");
+        }
+        else{
+          System.out.print(" "); // this is used so that we can have space in cells which are empty 
+        }
 
-    //   }
-    //   System.out.println();
-    // }
+      }
+      System.out.println();
+    }
     // Print the Pattern Half Pyramid 
     // int n = 1;
     // n++;

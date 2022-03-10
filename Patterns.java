@@ -112,12 +112,89 @@ public class Patterns {
         //     }
         //     System.out.println();
         // }
-        // Functions & Methods 
-        // Functions are a Block of Code which takes a certain Input performs some operation and producesa Output
-        // returnType functionName (type arg1, type arg2..){
-        // //operations }
-        // Void >- No return 
-        // Function name should not be any Keyword in Java  
+        //Print Half Pyramid
+        // int n = 5;
+        // for (int i =1;i<=n;i++){ // Rows
+        //     for (int j = 1;j<= n-i;j++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j = 1; j<=i;j++){ //Print the numbers
+        //         System.out.print(j+" ");
+        //     }
+        //     System.out.println();
+        // }
+        //Inverted Half Pyramid
+        // int n = 4;
+        // int k = 1;
+        // for (int i = n ; i>=1;i--){ 
+        //     for(int j = 1 ; j<=i;j++){
+        //         System.out.print(k); // Number on Pyamid
+        //     } k++;
+        //     System.out.println(" "); //Next Line
+        // }
+        //Hollow Rohmbus 
+        // int n = 5;
+        // for(int i = 1; i<=n;i++){
+        //     for (int j =1; j<=n-i;j++){  
+        //         System.out.print(" ");
+        //     }
+        //     for (int j =1 ; j<=n;j++){
+        //         if(i==1|| j==1 || i ==5 || j == 5){
+        //         System.out.print("*");
+        //     } else {
+        //         System.out.print(" ");
+        //     }
+        // }
+        //     System.out.println();
+        // }
+        //Hollow Butterfly
+        // int n = 5;
+        // for(int i = 1;i<=n;i++){
+        //     for (int j = 1; j<=i;j++){ // 1 st part
+        //         if ( j == 1|| i==j  ){//|| i==2 || j==2){
+        //             System.out.print("*");
+        //         }
+        //         else {
+        //             System.out.print(" ");
+        //         }  
+        //      }int spaces = 2*(n-i);
+        //      for (int j =1;j<= spaces; j++) {
+        //          System.out.print(" ");
+        //      }
+        //      for (int j = 1; j<=i;j++){
+        //          if (j == 1|| i==j){
+        //              System.out.print("*");
+        //          }
+        //          else{
+        //              System.out.print(" ");
+        //          }
+        //      }
+        //      System.out.println();
+            
+        // }
+        // for(int i = n;i>=1;i--){
+        //     for (int j = 1; j<=i;j++){ // 2nd part
+        //         if ( j == 1 || i==j  ){//|| i==2 || j==2){
+        //             System.out.print("*");
+        //         }
+        //         else {
+        //             System.out.print(" ");
+        //         }
+        //      } int spaces = 2*(n-i);
+        //      for (int j =1;j<= spaces; j++) {
+        //         System.out.print(" ");
+        //      }
+        //      for (int j = 1; j<=i;j++){
+        //         if (j == 1|| i==j){
+        //             System.out.print("*");
+        //         }
+        //         else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //      System.out.println(); 
+        // }
+        
         
 
 

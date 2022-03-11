@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class Patterns {
     public static void main(String args[]) {
@@ -179,7 +179,6 @@ public class Patterns {
              }
              System.out.println();    
         }
-        System.out.println();
         for(int i = n;i>=1;i--){
             for (int j = 1; j<=i;j++){ // 2nd part
                 if ( j == 1 || i==j  ){//|| i==2 || j==2){
@@ -202,7 +201,6 @@ public class Patterns {
             }
              System.out.println(); 
         }
-        System.out.println();
         //Pascals Triangle
         // int n = 5; 
         // for (int i= 1; i<=n;i++){
@@ -217,6 +215,7 @@ public class Patterns {
         //  }
         //     System.out.println();
         // }
+        //Logic not clear
         System.out.println();
         int row=5, i, j, space, num;
       for(i=0; i<row; i++)
@@ -233,5 +232,6 @@ public class Patterns {
          }
          System.out.print("\n");
     }
+    
 }
 }

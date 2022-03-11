@@ -425,6 +425,14 @@ public class Main{
   //    }
   //    System.out.println();
   //  }
+  // JAVA Exercise 1
+    // Q1 Input 3 no from user and Print Avg
+    //Scanner sc = new Scanner(System.in);
+    int x = sc.nextInt();
+    int y = sc.nextInt();
+    int z = sc.nextInt();
+    int Average = (x+y+z)/3;
+    System.out.println(Average);
       sc.close(); 
         }
     }

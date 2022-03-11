@@ -1,72 +1,71 @@
 import java.util.Scanner;
-
 //import java.util.*;
 public class Main{
     public static void main (String[] args){
-        System.out.print("Hello World with Java\n");// \n is used for next line
-        System.out.println("Hello World with JavaREM"); // println is used so after a sentence it comes to a new line
-        System.out.println("Hello World with JavaSDK");
-        System.out.println("Hello World with Java\nJinit here");
-       // print is used to print the sentences in the same line 
-       //  println or /n is used to print a sentence and then move to next line 
-       System.out.println("*");
-       System.out.println("**"); // type sout or syso and press tab for sys.out.println
-       System.out.println("***");
-       System.out.println("****");   
-       System.out.println("*\n**");
-       //
-       //String name = "Jinit Desai";
-       //int age = 22;
-       int a = 25;
-       int b = 10; // The advantage of using a variable is that we can change the value of variable the next time we define that variable
-       //double price = 18;
-       int sum = a + b;
-       System.out.println(sum);
-            //b=20;
-            //System.out.println(sum);
-       int diff = b - a;
-       System.out.println(diff);
-       int mul = a*b;
-       System.out.println(mul);
-      Scanner sc = new Scanner (System.in); // System.in is Input window Sys.out is output. Scanner ka object hai sc
-          //String name = sc.next(); // next is a function to take the input from user 
-          //System.out.println("Your name is "+name); // next function only considers one token (word) or only first word from input 
-       String Fullname = sc.nextLine();
-       System.out.println("Your Full Name is "+Fullname );
-      //
-          //nextInt() Integer as input
-        //nextFLoat() Float as input
-        int c = sc.nextInt();
-        int d = sc.nextInt();
-        sum = c + d;
-        System.out.println("Hello "+Fullname +"\n"+"The sum of the vaues entered is "+sum); //if you want spacing between hello and name give a space after hello inside the double quotes
-       int age = sc.nextInt();
-       if (age >= 18){ // Conditional Statements : (If,ELse) (Else if) (Switch) (Break)
-         System.out.println("You are an Adult "+Fullname);
-       }
-       else{
-         System.out.println("You are not an Adult "+Fullname);   
-       }
-       int e = sc.nextInt();
-       int num = e;
-       if (e%2 == 0)
-       {
-        System.out.println("The Number " +num +" is Even ");
-       }
-       else{
-         System.out.println("The Number " +num +" is ODD ");
-       }
-       int f = sc.nextInt();
-       int g = sc.nextInt();
-       if (f == g){ // if statement can be used even without curly braces but the only the next line condition would be implemented eg below 
-         System.out.println( "The number f and g is Equal" +"The value of both the numbers is : "+f );
-       }
-       else if(f>g){
-           System.out.println("The number " +f +" is greater than "+g);
-         }
-       else {
-          System.out.println("The number " +g +" is greater than " +f); // imp else if ke bracket mein else should bhi there if outside the bracket it will give an error
-         }
+      //   System.out.print("Hello World with Java\n");// \n is used for next line
+      //   System.out.println("Hello World with JavaREM"); // println is used so after a sentence it comes to a new line
+      //   System.out.println("Hello World with JavaSDK");
+      //   System.out.println("Hello World with Java\nJinit here");
+      //  // print is used to print the sentences in the same line 
+      //  //  println or /n is used to print a sentence and then move to next line 
+      //  System.out.println("*");
+      //  System.out.println("**"); // type sout or syso and press tab for sys.out.println
+      //  System.out.println("***");
+      //  System.out.println("****");   
+      //  System.out.println("*\n**");
+      //  //
+      //  //String name = "Jinit Desai";
+      //  //int age = 22;
+      //  int a = 25;
+      //  int b = 10; // The advantage of using a variable is that we can change the value of variable the next time we define that variable
+      //  //double price = 18;
+      //  int sum = a + b;
+      //  System.out.println(sum);
+      //       //b=20;
+      //       //System.out.println(sum);
+      //  int diff = b - a;
+      //  System.out.println(diff);
+      //  int mul = a*b;
+      //  System.out.println(mul);
+      // Scanner sc = new Scanner (System.in); // System.in is Input window Sys.out is output. Scanner ka object hai sc
+      //     //String name = sc.next(); // next is a function to take the input from user 
+      //     //System.out.println("Your name is "+name); // next function only considers one token (word) or only first word from input 
+      //  String Fullname = sc.nextLine();
+      //  System.out.println("Your Full Name is "+Fullname );
+      // //
+      //     //nextInt() Integer as input
+      //   //nextFLoat() Float as input
+      //   int c = sc.nextInt();
+      //   int d = sc.nextInt();
+      //   sum = c + d;
+      //   System.out.println("Hello "+Fullname +"\n"+"The sum of the vaues entered is "+sum); //if you want spacing between hello and name give a space after hello inside the double quotes
+      //  int age = sc.nextInt();
+      //  if (age >= 18){ // Conditional Statements : (If,ELse) (Else if) (Switch) (Break)
+      //    System.out.println("You are an Adult "+Fullname);
+      //  }
+      //  else{
+      //    System.out.println("You are not an Adult "+Fullname);   
+      //  }
+      //  int e = sc.nextInt();
+      //  int num = e;
+      //  if (e%2 == 0)
+      //  {
+      //   System.out.println("The Number " +num +" is Even ");
+      //  }
+      //  else{
+      //    System.out.println("The Number " +num +" is ODD ");
+      //  }
+      //  int f = sc.nextInt();
+      //  int g = sc.nextInt();
+      //  if (f == g){ // if statement can be used even without curly braces but the only the next line condition would be implemented eg below 
+      //    System.out.println( "The number f and g is Equal" +"The value of both the numbers is : "+f );
+      //  }
+      //  else if(f>g){
+      //      System.out.println("The number " +f +" is greater than "+g);
+      //    }
+      //  else {
+      //     System.out.println("The number " +g +" is greater than " +f); // imp else if ke bracket mein else should bhi there if outside the bracket it will give an error
+      //    }
          //
        // Quiz Question 
        // If 3 is an even number print Bazinga
@@ -120,59 +119,59 @@ public class Main{
       //  int mod = h%i;
       //
       //Scanner sc = new Scanner(System.in); 
-       int h = sc.nextInt();
-       int i = sc.nextInt();
-       int operator =sc.nextInt();
-       switch(operator)
-       {
-         case 1 : System.out.println(h + i);
-         break ;
-         case 2 : System.out.println(h - i);
-         break;
-         case 3 : System.out.println(h*i);
-         break;
-         case 4 : if (i == 0)
-         {
-          System.out.println("Invalid Dvision");
-         } else
-                   System.out.println(h/i);
-         break;
-         case 5 : if (i == 0)
-         {
-          System.out.println("Invalid Dvision");
-         } else
-         System.out.println(h%i);
-         break;
-         default : System.out.println(" Invalid Operation ");
-       }
-      //Q2
-      int button = sc.nextInt(); 
-      switch(button)
-      {
-        case 1 : System.out.println("January");
-        break;
-        case 2 : System.out.println("February");
-        break;
-        case 3 : System.out.println("March");
-        break;
-        case 4 :System.out.println("April");
-        break;
-        case 5 : System.out.println("May");
-        break;
-        case 6 : System.out.println("June");
-        break;
-        case 7 : System.out.println("July");
-        break ;
-        case 8 : System.out.println("August");
-        break;
-        case 9 : System.out.println("September");
-        break;
-        case 10 : System.out.println("October");
-        break;
-        case 11 : System.out.println("November");
-        break;
-        case 12 : System.out.println("December");
-      }
+      //  int h = sc.nextInt();
+      //  int i = sc.nextInt();
+      //  int operator =sc.nextInt();
+      //  switch(operator)
+      //  {
+      //    case 1 : System.out.println(h + i);
+      //    break ;
+      //    case 2 : System.out.println(h - i);
+      //    break;
+      //    case 3 : System.out.println(h*i);
+      //    break;
+      //    case 4 : if (i == 0)
+      //    {
+      //     System.out.println("Invalid Dvision");
+      //    } else
+      //              System.out.println(h/i);
+      //    break;
+      //    case 5 : if (i == 0)
+      //    {
+      //     System.out.println("Invalid Dvision");
+      //    } else
+      //    System.out.println(h%i);
+      //    break;
+      //    default : System.out.println(" Invalid Operation ");
+      //  }
+      // //Q2
+      // int button = sc.nextInt(); 
+      // switch(button)
+      // {
+      //   case 1 : System.out.println("January");
+      //   break;
+      //   case 2 : System.out.println("February");
+      //   break;
+      //   case 3 : System.out.println("March");
+      //   break;
+      //   case 4 :System.out.println("April");
+      //   break;
+      //   case 5 : System.out.println("May");
+      //   break;
+      //   case 6 : System.out.println("June");
+      //   break;
+      //   case 7 : System.out.println("July");
+      //   break ;
+      //   case 8 : System.out.println("August");
+      //   break;
+      //   case 9 : System.out.println("September");
+      //   break;
+      //   case 10 : System.out.println("October");
+      //   break;
+      //   case 11 : System.out.println("November");
+      //   break;
+      //   case 12 : System.out.println("December");
+      // }
        //
        // Hackerrank sum 
       //  int n = sc.nextInt();
@@ -227,7 +226,7 @@ public class Main{
       // System.out.println ("Int: "+c);
       // sc.close();
 
-      //Scanner sc = new Scanner(System.in);
+      Scanner sc = new Scanner(System.in);
       // int sum = 0;
       // int n = sc.nextInt();
       
@@ -428,11 +427,45 @@ public class Main{
   // JAVA Exercise 1
     // Q1 Input 3 no from user and Print Avg
     //Scanner sc = new Scanner(System.in);
-    int x = sc.nextInt();
-    int y = sc.nextInt();
-    int z = sc.nextInt();
-    int Average = (x+y+z)/3;
-    System.out.println(Average);
+    // float x = sc.nextFloat();
+    // float y = sc.nextFloat();
+    // float z = sc.nextFloat();
+    // float Average = (x+y+z)/3;
+    // System.out.println(Average);
+    //Q2 - Q5 in Functions file
+    //Q6 Do while Infinite Loop
+    // int i = sc.nextInt(); 
+    // do {
+    //    System.out.println("*");
+    //  }
+    //  while (i >=1);
+    int z = 0;
+    int p = 0;
+    int g = 0;
+    int n = sc.nextInt();
+    for (int i = 1 ; i<=n;i++){
+      int k = sc.nextInt();
+      if (k == 0)
+      {z = z+1;}
+      else if (k>= 1)
+      {p = p+1;} 
+      else 
+      {g = g+1;}
+    }
+    System.out.println("The number of zeros is "+z);
+    System.out.println("The number of Positive value is "+p);
+    System.out.println("The number of Negative values is "+g);
+    
+
+
+
+
+
+
+
+
+
+
       sc.close(); 
         }
     }

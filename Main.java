@@ -439,22 +439,22 @@ public class Main{
     //    System.out.println("*");
     //  }
     //  while (i >=1);
-    int z = 0;
-    int p = 0;
-    int g = 0;
-    int n = sc.nextInt();
-    for (int i = 1 ; i<=n;i++){
-      int k = sc.nextInt();
-      if (k == 0)
-      {z = z+1;}
-      else if (k>= 1)
-      {p = p+1;} 
-      else 
-      {g = g+1;}
-    }
-    System.out.println("The number of zeros is "+z);
-    System.out.println("The number of Positive value is "+p);
-    System.out.println("The number of Negative values is "+g);
+    // int z = 0;
+    // int p = 0;
+    // int g = 0;
+    // int n = sc.nextInt();
+    // for (int i = 1 ; i<=n;i++){
+    //   int k = sc.nextInt();
+    //   if (k == 0)
+    //   {z = z+1;}
+    //   else if (k>= 1)
+    //   {p = p+1;} 
+    //   else 
+    //   {g = g+1;}
+    // }
+    // System.out.println("The number of zeros is "+z);
+    // System.out.println("The number of Positive value is "+p);
+    // System.out.println("The number of Negative values is "+g);
     
 
 

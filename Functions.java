@@ -36,6 +36,32 @@ import java.util.Scanner;
 //      }
 // Lecture 7 Homework Questions 
 //Q1 To  check if a umber is Prime or not (UNSOLVED)
+    public class Functions{
+        public static void isPrime(int x){
+            int m,i =0;
+            m=x/2; 
+            if (x==0|| x==1){
+                System.out.println("This is not a Prime number");}
+            else {
+            for (i=2;i<=m;i++){
+            if (x%i==0){
+                System.out.println(x);
+                //break;
+            }
+            else{
+                System.out.println(x);
+            }
+            return;
+                }
+            }
+        }
+        public static void main(String args[]){
+            Scanner sc = new Scanner(System.in);
+            int x = sc.nextInt();
+            isPrime(x);
+            sc.close();
+        }
+    }
 
 //Q2 To check whether the given number n is even or odd
     // public class Functions {
@@ -54,7 +80,7 @@ import java.util.Scanner;
     //         sc.close();
     //     }
     // }
-//Q3 
+//Q3 Make a function to print the table of a given number n.
     // public class Functions {
     //     public static void printTable (int n ){
     //         for (int i = 1 ; i<=10; i++){
@@ -132,6 +158,19 @@ import java.util.Scanner;
     //         sc.close();
     //     }
     // }    
-
+// Q8 Two numbers are entered by the user, x and n. Write a function to find the value of one number raised to the power of another i.e. x^n
+    // public class Functions{
+    //     public static void calpow(double x, double n){
+    //         double p = Math.pow(x,n); // Math.pow is a function used to calculate the power of the given base
+    //         System.out.println(p); //We can also calculate the power of a negative number using same pow function
+    //     }
+    //     public static void main(String args[]){
+    //         Scanner sc = new Scanner (System.in);
+    //         int x =sc.nextInt();
+    //         int n =sc.nextInt();
+    //         calpow(x, n);
+    //         sc.close();
+    //     }
+    // }
 
      

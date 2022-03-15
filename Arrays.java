@@ -98,21 +98,61 @@ n=10^5  10^5   10^10    10^15
    marks[1] = 87; // Java Arrays are called as Zero Indexed
    marks[2] = 99; 
 */
+// import java.util.*;
+//    public class Arrays{
+//        public static void main(String args[]){
+//            //int[] marks = new int[3]; //Both are valid syntax
+//            int marks[] = new int[3];
+//            //int marks[] ={97,99,87}; //This alone line is also will print the same output
+//            marks[0]=97;
+//            marks[1]=99;
+//            marks[2]=87;
+//            //System.out.println(marks); This prints Jargon value 
+//         //    System.out.println(marks[0]); // This printing can be done as only 3 valuse are there
+//         //    System.out.println(marks[1]);
+//         //    System.out.println(marks[2]);
+//         for (int i=0;i<=2;i++)
+//         System.out.println(marks[i]);
+//         } 
+//    }
+// Defining an array 
+//Method 2 
+// type[] arrayName ={1,2,3,4,5,6} This is used whne we know the variable or size from the begining
+// import java.util.*;
+//     public class Arrays{
+//         public static void main(String args[]){
+//             Scanner sc = new Scanner(System.in);
+//             int size = sc.nextInt(); // the values gets auto Initialized in Java 
+//             int numbers[] =new int[size]; // Whenever we create a variable in Java that in memory takes some spaces and stores a null value if it is an object
+//             //input
+//             for (int i=0;i<size;i++){
+//                 numbers[i] = sc.nextInt();
+//             }
+//             //output
+//             for (int i=0;i<size;i++){ // If it is an int value it will store 0 ,float 0.0 ,boolean false ,string " " 
+//                 System.out.println(numbers[i]);
+//             }
+//             sc.close();
+//         }
+//     }
+// This algorithm is called as Linear Search
 import java.util.*;
-   public class Arrays{
-       public static void main(String args[]){
-           //int[] marks = new int[3]; //Both are valid syntax
-           int marks[] = new int[3];
-           marks[0]=97;
-           marks[1]=99;
-           marks[2]=87;
-           //System.out.println(marks); This prints Jargon value 
-        //    System.out.println(marks[0]); // This printing can be done as only 3 valuse are there
-        //    System.out.println(marks[1]);
-        //    System.out.println(marks[2]);
-        for (int i=0;i<=2;i++)
-        System.out.println(marks[i]);
+    public class Arrays{
+        public static void main (String args[]){
+            Scanner sc = new Scanner(System.in);
+            int size =sc.nextInt();
+            int numbers[] = new int [size];
+            //input
+            for(int i=0;i<size;i++){
+                numbers[i]=sc.nextInt();
+            }
+            //number to find
+            int x = sc.nextInt();
+            //output
+            for(int i=0;i<numbers.length;i++){ //Length variable is associated with every array numbers.length = size
+                if (numbers[i]==x) // we are finding 
+                {System.out.println(x +" found at index: "+i);}
+            }
+            sc.close();
         }
-       
-   }
-
+    }

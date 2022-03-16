@@ -208,26 +208,37 @@ n=10^5  10^5   10^10    10^15
         //     }
         // }
     //Q3 Take an array of numbers as input and check if it is an array sorted in ascending order.
-            public class Arrays{
-                public static void main(String[] args) {
-                    Scanner sc = new Scanner(System.in);
-                    int size = sc.nextInt();
-                    int max = 0;
-                    int numbers[]= new int[size];
-                    //input
-                    for (int i =0;i<size;i++){
-                        numbers[i]=sc.nextInt();
-                    }
-                    for(int i=0;i<size;i++){
-                        if (max < i)
-                        {max = i ;
-                        System.out.println("This is in Ascending Order");}
-                        else {
-                        System.out.println("This is not in Ascending order");
-                        }
-                    }
-                    sc.close(); 
-                } 
-                    
-                
-            }
+            //  public class Arrays{  // Good Sum Easy Logic
+            //     public static void main(String[] args) {
+            //         Scanner sc = new Scanner(System.in);
+            //         int size = sc.nextInt();
+            //         //int max = 0;
+            //         int numbers[]= new int[size];
+            //         //input
+            //         for (int i =0;i<size;i++){
+            //             numbers[i]=sc.nextInt();
+            //         }
+            //         boolean isAscending = true ;
+            //         for (int i = 0;i<numbers.length-1;i++){ //numbers.length-1 as Termination Condition
+            //             if (numbers[i]>numbers[i+1]){ // Condition for Descending Order
+            //                 isAscending = false;
+            //             }
+            //         }
+            //         if(isAscending){
+            //             System.out.println("The Array is Sorted in Ascending Order");
+            //         }
+            //         else{
+            //             System.out.println("The Array is not Sorted in Ascending Order");
+            //         }
+            //         // for(int i=0;i<size;i++){
+            //         //     if (max < i)
+            //         //     {max = i ;
+            //         //     System.out.println("This is in Ascending Order");}
+            //         //     else {
+            //         //     System.out.println("This is not in Ascending order");
+            //         //     }
+            //         // }
+            //         sc.close(); 
+            //     }   
+            // }
+ 

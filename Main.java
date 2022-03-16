@@ -432,13 +432,15 @@ public class Main{
     // float z = sc.nextFloat();
     // float Average = (x+y+z)/3;
     // System.out.println(Average);
-    //Q2 - Q5 in Functions file
+    //Q2 - Q5 ,Q8-9 in Functions file
     //Q6 Do while Infinite Loop
     // int i = sc.nextInt(); 
     // do {
     //    System.out.println("*");
     //  }
     //  while (i >=1);
+    //Q7 Write a program to enter the numbers till the user wants and at the end it 
+    //should display the count of positive, negative and zeros entered.
     // int z = 0;
     // int p = 0;
     // int g = 0;
@@ -455,6 +457,23 @@ public class Main{
     // System.out.println("The number of zeros is "+z);
     // System.out.println("The number of Positive value is "+p);
     // System.out.println("The number of Negative values is "+g);
-      sc.close(); 
-        }
+    //Q10 Write a program to print Fibonacci series of n terms where n is input by user
+    //IMP SUM easy Logic
+    // int n =sc.nextInt();
+    // int a = 0, b = 1;   
+    // System.out.print(a+" ");
+    // if(n > 1) {
+    //     //find nth term
+    //     for(int i=2; i<=n; i++) {
+    //         System.out.print(b+" ");
+    //         //the concept below is called swapping
+    //         int temp = b;
+    //         b = a + b;
+    //         a = temp;
+    //     }
+    //     System.out.println();
+    //     sc.close(); 
+    //     }
+
     }
+  }

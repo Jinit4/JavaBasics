@@ -35,7 +35,7 @@ import java.util.Scanner;
 //         }
 //      }
 // Lecture 7 Homework Questions 
-//Q1 To  check if a umber is Prime or not (UNSOLVED)
+//Q1 To  check if a number is Prime or not (UNSOLVED)
     // public class Functions{
     //     public static void isPrime(int x){
     //         int m,i =0;
@@ -173,5 +173,25 @@ import java.util.Scanner;
     //         sc.close();
     //     }
     // }
+//Q9 Write a function that calculates the Greatest Common Divisor of 2 numbers. 
+//IMP SUM easy Logic
+    // public class Functions{
+    //     public static void main(String args[]) {
+    //         Scanner sc = new Scanner(System.in);
+    //         int n1 = sc.nextInt();
+    //         int n2 = sc.nextInt();
+      
+    //         while(n1 != n2) { 
+    //             if(n1>n2) {
+    //                 n1 = n1 - n2;
+    //             } else {
+    //                 n2 = n2 - n1;
+    //             }
+    //         }
+    //         System.out.println("GCD is : "+ n2);
+    //     }   
+    //  }
+     
+    
 
      

@@ -26,7 +26,8 @@ import java.util.*;
             //     }
             //     System.out.println();
             // }
-            // TAke a matrix as input and find number and print its indices
+            //Homework
+            // Q2 Take a matrix as input and find number and print its indices
             int rows = sc.nextInt();
             int cols = sc.nextInt();
             
@@ -39,16 +40,13 @@ import java.util.*;
                     numbers[i][j]=sc.nextInt();
                 }
             }
-            int num = sc.nextInt();
             //output
             for(int i = 0;i <rows;i++){ 
                 //coloumns 
                 for(int j =0;j<cols;j++){
-                    //compare
-                   if ( numbers[i][j] == num ){
-                       System.out.println("("+i+","+j+")");
-                   }   
+                       System.out.print(numbers[j][i]+ " ");
                 }
+                System.out.println();
             }
             sc.close();
         }

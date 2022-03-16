@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /* Time Complexity
    Relation between Input Size and Running Time (Operations)
    Scanner se we take Input that input is suppose n or m 
@@ -136,23 +138,96 @@ n=10^5  10^5   10^10    10^15
 //         }
 //     }
 // This algorithm is called as Linear Search
-import java.util.*;
-    public class Arrays{
-        public static void main (String args[]){
-            Scanner sc = new Scanner(System.in);
-            int size =sc.nextInt();
-            int numbers[] = new int [size];
-            //input
-            for(int i=0;i<size;i++){
-                numbers[i]=sc.nextInt();
+// import java.util.*;
+//     public class Arrays{
+//         public static void main (String args[]){
+//             Scanner sc = new Scanner(System.in);
+//             int size =sc.nextInt();
+//             int numbers[] = new int [size];
+//             //input
+//             for(int i=0;i<size;i++){
+//                 numbers[i]=sc.nextInt();
+//             }
+//             //number to find
+//             int x = sc.nextInt();
+//             //output
+//             for(int i=0;i<numbers.length;i++){ //Length variable is associated with every array numbers.length = size
+//                 if (numbers[i]==x) // we are finding 
+//                 {System.out.println(x +" found at index: "+i);}
+//             }
+//             sc.close();
+//         }
+//     }
+//Homework 
+//Q1 Take an array of names as input from the user and print them on the screen.
+    // public class Arrays{
+    //     public static void main(String args[]){
+    //         Scanner sc = new Scanner(System.in);
+    //         int size = sc.nextInt();
+    //         String names[]= new String[size];
+    //         // input
+    //         for(int i=0;i<size;i++){
+    //             names[i] = sc.next(); // It only Prints single name not full name 
+    //         }
+    //         //output
+    //         for(int i =0; i<names.length;i++){
+    //             System.out.println(names[i]);
+    //         }
+    //         sc.close();
+    //     }
+    // }
+//Q2 Find the maximum & minimum number in an array of integers. 
+        // public class Arrays{
+        //     public static void main (String args[]){
+        //         Scanner sc = new Scanner(System.in);
+        //         int size = sc.nextInt();
+        //         int numbers [] = new int[size];
+        //         //input
+        //         for(int i=0;i<size;i++){
+        //             numbers[i]= sc.nextInt();
+        //         }
+        //         // Max and Min 
+
+        //         int max = Integer.MIN_VALUE; // Integer max value is 2147483647. Any integer variable cannot store any value beyond this limit. Upon doing so, the memory will overflow and the value will get negative.
+        //         int min = Integer.MAX_VALUE; // Integer min value is -2147483648 
+                
+        //         for (int i= 0; i<size;i++){  // Perform a dry run to understand it.
+        //             if (numbers[i] < min){  // minimum value is taken as the Max value so the number less than the maximum possible in Java is Printed
+        //                 min=numbers[i];
+        //             }
+        //             if(numbers[i] > max){ // The maximum value stoed in max is the minimum possible value in Java so the first lesser number in array is printed as the minimum number
+        //                 max=numbers[i];
+        //             }
+                    
+        //         }
+        //         System.out.println("The Maximum Number is "+max);
+        //         System.out.println("The Minimum Number is "+min);
+                
+        //         sc.close();
+
+        //     }
+        // }
+    //Q3 Take an array of numbers as input and check if it is an array sorted in ascending order.
+            public class Arrays{
+                public static void main(String[] args) {
+                    Scanner sc = new Scanner(System.in);
+                    int size = sc.nextInt();
+                    int max = 0;
+                    int numbers[]= new int[size];
+                    //input
+                    for (int i =0;i<size;i++){
+                        numbers[i]=sc.nextInt();
+                    }
+                    for(int i=0;i<size;i++){
+                        if (max < i)
+                        {max = i ;
+                        System.out.println("This is in Ascending Order");}
+                        else {
+                        System.out.println("This is not in Ascending order");
+                        }
+                    }
+                    sc.close(); 
+                } 
+                    
+                
             }
-            //number to find
-            int x = sc.nextInt();
-            //output
-            for(int i=0;i<numbers.length;i++){ //Length variable is associated with every array numbers.length = size
-                if (numbers[i]==x) // we are finding 
-                {System.out.println(x +" found at index: "+i);}
-            }
-            sc.close();
-        }
-    }

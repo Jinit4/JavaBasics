@@ -36,32 +36,33 @@ import java.util.Scanner;
 //      }
 // Lecture 7 Homework Questions 
 //Q1 To  check if a umber is Prime or not (UNSOLVED)
-    public class Functions{
-        public static void isPrime(int x){
-            int m,i =0;
-            m=x/2; 
-            if (x==0|| x==1){
-                System.out.println("This is not a Prime number");}
-            else {
-            for (i=2;i<=m;i++){
-            if (x%i==0){
-                System.out.println(x);
-                //break;
-            }
-            else{
-                System.out.println(x);
-            }
-            return;
-                }
-            }
-        }
-        public static void main(String args[]){
-            Scanner sc = new Scanner(System.in);
-            int x = sc.nextInt();
-            isPrime(x);
-            sc.close();
-        }
-    }
+    // public class Functions{
+    //     public static void isPrime(int x){
+    //         int m,i =0;
+    //         m=x/2; 
+    //         if (x==0|| x==1){
+    //             System.out.println("This is not a Prime number");}
+    //         else {
+    //         for (i=2;i<=m;i++){
+    //         if (x%i==0){
+    //             System.out.println(x);
+    //             //break;
+    //         }
+    //         else{
+    //             System.out.println(x);
+    //         }
+    //         return;
+    //             }
+    //         }
+    //     }
+    //     public static void main(String args[]){
+    //         Scanner sc = new Scanner(System.in);
+    //         int x = sc.nextInt();
+    //         isPrime(x);
+    //         sc.close();
+    //     }
+    // }
+
 
 //Q2 To check whether the given number n is even or odd
     // public class Functions {

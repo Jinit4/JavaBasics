@@ -474,6 +474,20 @@ public class Main{
     //     System.out.println();
     //     sc.close(); 
     //     }
+    //Hackerrank Question Important Concept
+    //Scanner sc = new Scanner (System.in);
+        int a = sc.nextInt();
+        double b = sc.nextDouble();
+        /*Note: If you use the nextLine() method immediately following the nextInt() method, 
+        recall that nextInt() reads integer tokens; because of this, the last newline character
+        for that line of integer input is still queued in the input buffer and the next nextLine() 
+        will be reading the remainder of the integer line (which is empty).
+        */
+        sc.nextLine();
+        String str = sc.nextLine();
+        System.out.println("String: "+str);
+        System.out.println("Double: "+b);
+        System.out.println("Int: "+a);
 
     }
   }

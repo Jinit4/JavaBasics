@@ -476,18 +476,76 @@ public class Main{
     //     }
     //Hackerrank Question Important Concept
     //Scanner sc = new Scanner (System.in);
-        int a = sc.nextInt();
-        double b = sc.nextDouble();
-        /*Note: If you use the nextLine() method immediately following the nextInt() method, 
-        recall that nextInt() reads integer tokens; because of this, the last newline character
-        for that line of integer input is still queued in the input buffer and the next nextLine() 
-        will be reading the remainder of the integer line (which is empty).
-        */
-        sc.nextLine();
-        String str = sc.nextLine();
-        System.out.println("String: "+str);
-        System.out.println("Double: "+b);
-        System.out.println("Int: "+a);
+        // int a = sc.nextInt();
+        // double b = sc.nextDouble();
+        // /*Note: If you use the nextLine() method immediately following the nextInt() method, 
+        // recall that nextInt() reads integer tokens; because of this, the last newline character
+        // for that line of integer input is still queued in the input buffer and the next nextLine() 
+        // will be reading the remainder of the integer line (which is empty).
+        // */ 
+        // sc.nextLine();
+        // String str = sc.nextLine();
+        // System.out.println("String: "+str);
+        // System.out.println("Double: "+b);
+        // System.out.println("Int: "+a);
+        //In  this we are looking at operators which are unary operators i.e ++ and --       
+        //Pre Increment 
+        // int a = 10;
+        // int b = 0;
+        // b = ++a;
+        // System.out.println(a);
+        // System.out.println(b);
+        // //Post Increment 
+        // int c = 10;
+        // int d = 0;
+        // d = c++;
+        // System.out.println(c);
+        // System.out.println(d);
+        //Pre Decrement
+        int a = 10;
+        int b = 0;
+        b = --a;
+        System.out.println(a);
+        System.out.println(b);
+        //Post Decrement 
+        int c = 10;
+        int d = 0;
+        d = c--;
+        System.out.println(c);
+        System.out.println(d);
+        //Relational Operators shows relation between two operators eg == , != ,< , >, <=, >=
+        //Relational Operators always return Boolean value i.e True or False
+        //Logical Operators
+        // && - Logical And, ||-Logical Or , !-Logical Not
+        //Logically we can check multiple statements in Java
+        //In logic and consider two Statements a=10,b=20 and c=30 here a<b && a<c , Now both the condition is true and thus we get value as true
+        //In logic or from multiple statements even if the condition in one statement is true it will return value as True 
+        //In Logic Not consider a= 10, b= 20 now if(!a<b){ } IN this case this if statement will never be executed as not makes the inside condition as false
+        //Bitwise Operators 
+        // Binary And & - Consider A = 0101 B = 0110 In this in cas eof true we have 1 and for false we have 0
+        //  0101
+        //& 0110 
+        //  0100 Here we are taking and of 1 and 0 which is 0 , then 0 and 1 which is 0, then 1 and 1 which is 1 
+        // The final output here is 0100
+        // There is a differene between & and &&, & is bitwise and and && is Logical and 
+        //Binary or 
+        //  0101
+        //| 0110 
+        //  0111 O/p 
+        //Binary Xor ^ similar values false and different values return true 
+        //  0101
+        //^ 0110 
+        //  0011 O/p
+        //Binary ones Complement 
+        // A = 0101 ~A =1010
+        //Binary Left Shift <<, Binary Right shift >>, it moves all the elements one position to left or to right
+        // Example if A = 0101 then if we perform left shift then o/p will be 1010 as the first 0 will shift towards left and will be out and other 0 will enter in the back position
+        //Assignment Operator 
+        // =, +=, -=,*=, /=
+        // A = B Right side value wil be assigned to left side Other are self explanatory 
+        // A +=b means A+B will be performed forst and then that value will be stored in B
 
-    }
+
+
+      }
   }

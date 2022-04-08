@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Bits{
     public static void main(String args[]) {
 //We will be studying 4 type of operations 
@@ -36,9 +38,61 @@ Later we will perform operation Or between 0010 and 0101 to get ouput as 0111
     int k = 5;
     int posi = 1; 
     int BitMask = 1<< posi;
-    System.out.println(BitMask | k); 
+    System.out.println(BitMask | k);
+//Next operation is Clear Bit 
+/*Clear the 3 bit (Position = 2 ) of a number n.(n=0101)
+Bit mask = 1<<i
+Operation : And with Not 
+Here we will make 0101 as 0001 and the bit mask will be 0001 left shift by 2 as 1<<2 then it will be 0100 not of this will be 1011
+First we will take the not(~) of Bitmask and then we will perform and i.e when 1011 and(&) 0101 we get 0001
+*/ 
+    int m = 5; //0101
+    int po = 2; //position to clear the bit is 2 
+    int bitmask = 1<<po; 
+    int notBitmask = ~(bitmask); //Performing the not operation
 
+    int newNumber = notBitmask & m; //Performing And operation
+    System.out.println(newNumber); 
+//Next Operation is Update Bit 
+/* Update the 2nd Bit (position = 1) of a number n to 1. (n=0101)
+    FOR 0               FOR 1
+    Bit mask: 1<<i       Bit mask: 1<<i
+    Operation: And      Operation: Or
+    with Not 
+    (Clear Operation)   (Set Operation)
+These are similar operations which we have performed above 
+Here we have to take input from the user if we want to update the bit as 0 or 1 
+now first common step is to get the bit mask 1<<1(left shift :- <<) we get 0001 we get 0010
+Then lets consider we want to set the bit as 1 at position 1 
+we perform or operation 
+0010 | 0101 we get 0111 
+Now if we want to set the bit as 0 at position 1 we pefrorm not operation and then and operation
+~(0010) we get 1101 now we perform and operation 1101 & 0101 0101 // 0 & 0 is 0 only 1 & 1 is 1 in and logic
+consider other example 
+where n=0101 position = 2 and n to 0
+1<<2 bit mask is 0100 
+Now we will use the not operation to the bit mask 1011. 
+Now we will perform and operation 0100 & 0101 = 0100 so at n = 0 we updated the bit from 1 to 0  
+*/
+    Scanner sc = new Scanner(System.in);
+    int s = 5;
+    int posit = 1;
+    int oper = sc.nextInt(); //Here we are updating the bit to 1 or 0 as the user enters
+    // oper 1 = set , oper 0 =clear
 
+    //Set operation
+    if(oper == 1){
+    int bitmaskk = 1<<posit; //1 left shift i times
+    int newnum = bitmaskk | s ; 
+    System.out.println(newnum);
+    }
+    else if (oper ==0){
+    int bitmas = 1<<posit;
+    int nobitmask = ~(bitmas);
+    int newno = nobitmask & s;
+    System.out.println(newno);
+    }
+    sc.close();
 
 
 

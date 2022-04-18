@@ -3,7 +3,7 @@ import java.util.Scanner;
 /* Time Complexity
    Relation between Input Size and Running Time (Operations)
    Scanner se we take Input that input is suppose n or m 
-   now we use for loopso the operation inside the foor loop is performed n times which 
+   now we use for loop so the operation inside the for loop is performed n times which 
    increases its time. Therefore the time that a code takes for execution is depenent
    on the input size.
    Example 
@@ -28,7 +28,7 @@ import java.util.Scanner;
    Numbers {1,2,3,4,5}
    search for '1'
    Best Case is represented by omega Ω(1) 1) 1,2,3,4,5 in this it is in 1 st position so only 1 operation was required or 1 unit of time 
-   Average case is represeted by theta Θ(n+1)/2 2)2,1,3,4,5 or 2,3,4,1,5 the avg will be taken by (1+2+3+4+5)/5
+   Average case is represeted by theta Θ(n+1)/2)2,1,3,4,5 or 2,3,4,1,5 the avg will be taken by (1+2+3+4+5)/5
    Generalizing the above case (1+2+3...n)/n = n(n=1)/2n = n+1/2
    Worst Case is represented by big O not zero O(n)  3) 2,3,4,5,1 to reach 1 we have to perform n steps in worst case here 5 
    Whenever we will be talking of Time Complexity we will aways be talking about Worst case Time Complexity i.e. O
@@ -84,7 +84,7 @@ n=10^5  10^5   10^10    10^15
        }
    } 
    Space complexity is meant by the space that a code takes in a memory (Variables stored) In this ex n and i and also Scanner object
-   The space for n will not be dependent on the vale of n in this example even if n= 6 or n = 10^6
+   The space for n will not be dependent on the value of n in this example even if n= 6 or n = 10^6
    Now we will consider a case in which the space will be dependent on the value of input size 
    Arrays
    More details on arrays in upcoming lecs 
